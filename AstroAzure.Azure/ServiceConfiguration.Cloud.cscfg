@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AstroAzure.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="AstroAzure">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=astroazure;AccountKey=V6XtJFQl2G0VefufDbz2Dx3TcgqI8SeqQlg92mjHRJogpDIuksCe1QZYAuph2AV0z/ywC5EwQ6vPjZlOeZQ2JQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="mrinban" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEEqmjR90/TWeQWXYMu4WURkwDQYJKoZIhvcNAQEBBQAEggEAqofLiby7TnJkMhkoj2KMbeYZJOm31C+iK0RkN3CVTSLh1j8191A5tcoKe5zg+TYr0Az9P+P0eL8wxjGrVdIYbWosaRZtSwZVsDm66I5KvRgcr3iwvWkZ207RsFBQcDdW3DIMANM9dJ4rOrkIWRc6udJlePasgCpsTuOYq2e0Tkgo9tSFReqATY1F1T7ArVNtGZ51cvuVhkx5T+UeJk6J6iziyHGduR1cmdrZerJw4Q+R+cHK8Kvc2CjH6/FJ0d9rwH+egxJGkNyt61sjiNZF6h8tuslRK9imjwNrFgPcDRVm/OV6ZdlRpyLEznQqxEA0iCSaq4f7Ee9xTdqvk+a9JjAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECCUZoUUj7gEDgBCJjv8hvCTScma0ZXSiIgQD" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2015-03-01T23:59:59.0000000-08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="BCB714010F0CFB439A2720616EA6D90190AA3798" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
